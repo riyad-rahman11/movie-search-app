@@ -360,7 +360,7 @@ function WatchedSummery({ watched }) {
           <span>{avgUserRating}</span>
         </p>
         <p>
-          <span>⏳</span>
+          <span>⏳</span> 
           <span>{avgRuntime} min</span>
         </p>
       </div>
