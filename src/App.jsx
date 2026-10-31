@@ -1,4 +1,4 @@
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import StarRating from "./StarRating";
 
 const tempMovieData = [
@@ -203,28 +203,6 @@ function Box({ children }) {
   );
 }
 
-/*function WatchedBox() {
-  const [watched, setWatched] = useState(tempWatchedData);
-  const [isOpen2, setIsOpen2] = useState(true);
-
-  return (
-    <div className="box">
-      <button
-        className="btn-toggle"
-        onClick={() => setIsOpen2((open) => !open)}
-      >
-        {isOpen2 ? "–" : "+"}
-      </button>
-      {isOpen2 && (
-        <>
-          <WatchedSummery watched={watched} />
-          <WatchedMovieList watched={watched} />
-        </>
-      )}
-    </div>
-  );
-}*/
-
 function MovieList({ movies, onSelectedMovie }) {
   return (
     <ul className="list list-movies">
@@ -310,7 +288,7 @@ function MovieDetails({ selectedId, onCloseMovieDetails, onAddWatched }) {
             <button className="btn-back" onClick={onCloseMovieDetails}>
               &larr;
             </button>
-            <img src={poster} alt={`Poster of &${movie} movie`} />
+            <img src={poster} alt={`Poster of & ${movie} movie`} />
             <div className="details-overview">
               <h2>{title}</h2>
               <p>
